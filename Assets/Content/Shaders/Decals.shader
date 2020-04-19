@@ -54,7 +54,7 @@
             ng = ng * _Color;
             
             fixed4 add = tex2D(_AddTex, IN.uv_AddTex);
-            o.Emission = add.g;
+            //o.Emission = add.g;
             o.Occlusion = add.r;
             o.Albedo = cm.rgb;
             o.Normal = normalize(ng.xyz * 2 - 1);
